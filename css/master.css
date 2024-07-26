@@ -1,0 +1,200 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --White-color: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --main-margin: 30px;
+}
+body {
+    background-color: var(--Stone-100);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-box {
+    margin: 100px auto;
+    width: 600px;
+    padding: 25px;
+    background-color: var(--White-color);
+    border-radius: 10px;
+}
+@media (max-width:768px) {
+    .main-box {
+        width: 345px;
+    }
+}
+.main-box .image img {
+    width: 100%;
+}
+.main-heading {
+    margin-top: var(--main-margin);
+}
+.main-heading .text h1 {
+    font-family: "Young Serif", serif;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.main-heading .text p {
+    color: var(--Stone-600);
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+}
+.prep-time {
+    margin-top: var(--main-margin);
+    background-color: var(--Rose-50);
+    padding: 25px;
+    position: relative;
+}
+.prep-time .text h3 {
+    color: var(--Rose-800);
+    font-family: "Outfit", sans-serif;
+    font-weight: normal;
+    /* margin-bottom: 10px; */
+    padding: 10px 0 10px ;
+}
+.prep-time .text ul {
+padding-left: 20px;
+list-style: none;
+}
+.prep-time .text ul li {
+    padding: 10px 0 15px;
+    font-family: "Outfit", sans-serif;
+    color: var(--Stone-600);
+}
+.prep-time .text ul li::before {
+    font-family: 'Font Awesome 5 free';
+    content: '\f111';
+    font-weight: 900;
+    position: relative;
+    left: -16px;
+    font-size: 5px;
+    top: -3px;
+    color: var(--Rose-800);
+}
+.prep-time .text ul li span {
+    font-weight: 600;
+}
+.ingredients {
+    /* background-color: antiquewhite; */
+    margin-top: var(--main-margin);
+    padding: 10px 1i0px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--Stone-150);
+}
+/* .ingredients::before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    margin-top: 10px;
+} */
+.ingredients h2 {
+    padding: 10px 0 10px 10px;
+    font-family: "Young Serif", serif;
+    font-weight: normal;
+    color: var(--Brown-800);
+}
+.ingredients ul {
+    padding-left: 30px;
+}
+.ingredients ul li {
+    padding: 10px 0 10px;
+    color: var(--Brown-800);
+}
+.ingredients ul li span {
+    color: var(--Stone-600);
+}
+.instructions {
+padding: 20px
+}
+.instructions .text h2 {
+    padding-bottom: 20px;
+    font-family: "Young Serif", serif;
+    font-weight: normal;
+    color: var(--Brown-800);
+}
+.instructions .text ul{
+    list-style: decimal;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.instructions .text ul li {
+    font-size: 13px;
+    padding-bottom: 25px;
+    line-height: 1.4;
+    color: var(--Brown-800);
+}
+.instructions .text ul li .main-span {
+    color: var(--Stone-600);
+    font-weight: normal;
+}
+.instructions .text ul li span {
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+}
+
+.nutrition h2 {
+    padding-bottom: 20px;
+    font-family: "Young Serif", serif;
+    font-weight: normal;
+    color: var(--Brown-800);
+}
+.nutrition p {
+    font-size: 14px;
+    color: var(--Stone-600);
+}
+.the-table {
+    padding-top: 30px;
+
+}
+table {
+    width: 100%;
+
+}
+table th {
+    padding-bottom: 20px;
+    position: relative;
+    left: -85px;
+    
+}
+@media (max-width:768px) {
+    table th {
+        left: -30px;
+    }
+}
+table th::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: var(--Stone-150);
+    position: absolute;
+    left: 87px;
+    bottom: 13px;
+}
+@media (max-width:768px) {
+    table th::before {
+        left: 30px;
+    }
+}
+table .first {
+    color:var(--Stone-600);
+    font-family: "Outfit", sans-serif;
+    font-weight: normal;
+}
+table .sec {
+    color:var(--Brown-800);
+    font-family: "Outfit", sans-serif;
+    text-align: left;
+}
